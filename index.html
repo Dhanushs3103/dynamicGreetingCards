@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Dyanamic Greeting cards</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    // Your  code will go here
+
+    // GreetingCard component
+    function GreetingCard({ greet }) {
+      return (
+        <div id="greetChild">
+          <h3>Name: {greet.name}</h3>
+          <h3>Greeting: {greet.greeting}</h3>
+        </div>
+      );
+    }
+
+    // App component
+    function App() {
+      // list of items in an array,
+      let greetItems = [
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+        {
+          name: "John Doe",
+          greeting: "HAPPY BIRTHDAY",
+        },
+      ];
+      return (
+        <>
+          <h1>Greeting Cards</h1>
+          <div id="greetGrid">
+            {greetItems.map((greet, i) => {
+              return <GreetingCard key={i} greet={greet} />;
+            })}
+          </div>
+        </>
+      );
+    }
+
+    // Catching root element
+    let rootElement = ReactDOM.createRoot(document.getElementById("root"));
+    // rendering
+    rootElement.render(<App />);
+  </script>
+</html>

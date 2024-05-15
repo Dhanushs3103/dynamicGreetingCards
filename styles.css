@@ -1,0 +1,29 @@
+body {
+    font-family: poppins, sans-serif;
+    background-color: lightcyan;
+}
+
+h1 {
+    text-align: center;
+}
+
+#greetGrid {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 20px;
+    width: 90%;
+    margin: auto;
+    background-color: azure;
+}
+
+#greetChild {
+    text-align: left;
+    padding: 0 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: beige;
+}
